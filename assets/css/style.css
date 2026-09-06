@@ -314,6 +314,250 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 }
 
 
+/* =========================================================
+   GuideNX Search — Hero Layout
+   STEP 2 — Logo + Left Aligned Content
+========================================================= */
+
+/* Large GuideNX brand mark */
+.guidenx-hero .hero-brand-mark {
+  position: absolute;
+  
+  right: -2%;
+  top: 53%;
+  
+  transform: translateY(-50%);
+  
+  width: 620px;
+  height: 620px;
+
+  transform: translateY(-50%);
+
+  background: transparent;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+.guidenx-hero .hero-brand-mark img {
+  display: block;
+  
+  width: 100%;
+  height: 100%;
+  
+  object-fit: contain;
+
+  opacity: 0.11;
+}
+
+/* Move hero content toward the left */
+.guidenx .hero-content {
+  align-items: flex-start;
+  text-align: left;
+
+  max-width: 1200px;
+}
+
+/* Left-align headline */
+.guidenx-hero h1 {
+  text-align: left;
+}
+
+/* Left-align supporting content */
+.guidenx-hero .hero-subtext {
+  text-align: left;
+}
+
+/* Left-align tagline */
+.guidenx-hero .hero-tagline {
+  text-align: left;
+}
+
+/* Keep CTA on the left */
+.guidenx-hero .hero-buttons {
+  justify-content: flex-start;
+}
+
+/* Keep the logo behind the content */
+.guidenx-hero .hero-content {
+  z-index: 2;
+}
+
+/* =========================================================
+   Mobile
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .guidenx-hero .hero-brand-mark {
+    width: 260px;
+    height: 260px;
+    right: 50%;
+    top: 72%;
+    transform: translate(50%, -50%);
+    opacity: 0.08;
+  }
+
+  .guidenx-hero .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .guidenx-hero h1,
+  .guidenx-hero .hero-subtext,
+  .guidenx-hero .hero-tagline {
+    text-align: center;
+  }
+
+  .guidenx-hero .hero-buttons {
+    justify-content: center;
+  }
+}
+
+
+/* =========================================================
+   GuideNX Hero Watermark
+========================================================= */
+
+.guidenx-hero .hero-brand-mark {
+  position: absolute;
+
+  width: 620px;
+  height: 620px;
+
+  right: 6%;
+  top: 53%;
+
+  transform: translateY(-50%);
+
+
+  background: transparent;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+
+.guidenx-hero .hero-brand-mark img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  display: block;
+
+  opacity: 0.11;
+}
+
+
+
+
+/* =========================================================
+   GuideNX Hero — Left Content Position
+========================================================= */
+
+.guidenx-hero .hero-content {
+  width: calc(100% - 160px);
+  max-width: 1500px;
+
+  margin-left: calc(50% - 750px - 75px);
+  margin-right: auto;
+
+  align-items: flex-start;
+  text-align: left;
+}
+
+
+@media (max-width: 768px) {
+
+  .guidenx-hero .hero-content {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .guidenx-hero .hero-brand-mark {
+    width: 260px;
+    height: 260px;
+
+    right: 50%;
+    top: 72%;
+
+    transform: translate(50%, -50%);
+
+    opacity: 0.07;
+  }
+
+  .guidenx-hero .watermark-dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* =========================================================
+   GuideNX Navbar Brand — Option 1
+   GuideNX
+========================================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Brand text container */
+.brand-name {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+
+  margin-left: 10px;
+
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* GuideNX wordmark */
+.brand-main {
+  display: flex;
+  align-items: baseline;
+  line-height: 1;
+}
+
+.brand-guide {
+  color: #3EA5CF;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.brand-nx {
+  color: #D4A017;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+/* Search */
+.brand-search {
+  color: #6B7A89;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  letter-spacing: -0.2px;
+
+  line-height: 1;
+}
 /* ---------- WHY US ---------- */
 
 /* ================= Lakeside Difference Section ================= */
